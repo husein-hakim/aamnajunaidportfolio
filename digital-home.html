@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aamna Junaid | Digital Art</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add margins to center the table and align it properly */
+        table {
+            margin: 20px auto; /* Adds margin on top/bottom and centers horizontally */
+            width: 80%; /* Adjust table width to keep it responsive */
+        }
+
+        /* Black and white filter for images */
+        .thumbnail {
+            width: 100%; /* Ensures images scale properly inside table cells */
+            display: block;
+            margin: 0 auto; /* Centers images in their cells */
+            filter: grayscale(100%); /* Makes the image black and white */
+            transition: filter 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Hover effect to bring color back */
+        .thumbnail:hover {
+            filter: grayscale(0%);
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+
+            .thumbnail {
+                width: 90%; /* Reduce image size for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="index.html">
+            <img src="logo.png" alt="Logo" class="logo position-absolute top-0 start-50 translate-middle">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Photography
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="photography-food.html">Food Photography</a></li>
+                        <li><a class="dropdown-item" href="jewellery-photography.html">Jewellery Photography</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="digital-home.html">Digital Artwork</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="manual-artwork.html">Manual Artwork</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h2 class="title text-center my-4">Digital Art</h2>
+    <br>
+    <table style="margin-bottom: 100px;">
+        <tr>
+            <td>
+                <a href="mindgobbling.html">
+                    <img src="mindbogglingTN.png" alt="Image 1" class="thumbnail">
+                </a>
+            </td>
+            <td>
+                <a href="vinyl.html">
+                    <img src="VinylTN.png" alt="Image 2" class="thumbnail">
+                </a>
+            </td>
+            <td>
+                <a href="sparsh.html">
+                    <img src="sparshTN.png" alt="Image 3" class="thumbnail">
+                </a>
+            </td>
+        </tr>
+    </table>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+<footer class="bg-black text-center py-3" style="position: fixed; bottom: 0; width: 100%;">
+    <div class="container d-flex justify-content-center align-items-center">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/_aamnajunaid_/profilecard/?igsh=MWVjcGpoM29iZWRhaQ==" class="me-3" target="_blank">
+            <img src="instagram.png" alt="Instagram" class="img-fluid" style="width: 40px; height: auto;">
+        </a>
+        <!-- Behance -->
+        <a href="https://www.behance.net/aamnajunaid" class="me-3" target="_blank">
+            <img src="behance.png" alt="Behance" class="img-fluid" style="width: 40px; height: auto;">
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://whatsapp.com/dl/" class="me-3" target="_blank">
+            <img src="whatsapp.png" alt="WhatsApp" class="img-fluid" style="width: 40px; height: auto;">
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/aamna-junaid-040852221/" target="_blank">
+            <img src="linkedin square.png" alt="LinkedIn" class="img-fluid" style="width: 40px; height: auto;">
+        </a>
+    </div>
+</footer>
+</html>

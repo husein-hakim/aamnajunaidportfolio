@@ -1,0 +1,328 @@
+/* Reset basic margins and padding */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure the body takes at least full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+	font-family: Amsterdam-four;
+	src: url('amsterdam-four.ttf');
+}
+
+.landing-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; /* Stack elements vertically */
+	height: 100vh; /* Full viewport height */
+	background-color: #000; /* Background color */
+	background-size: cover;
+	background-position: center;
+}
+
+/* Logo container */
+.logo {
+	display: flex; /* Use flexbox for centering */
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	text-align: center;
+	animation: fadeIn 2s ease-in-out; /* Optional animation */
+	margin-bottom: 50px; /* Add spacing below the logo */
+	height: auto; /* Adjust automatically based on content */
+}
+
+/* Adjust logo image size */
+.logo img {
+	max-height: 600px; /* Restrict the logo's maximum height */
+	display: block; /* Ensure proper centering */
+	margin: 0 auto; /* Center horizontally */
+}
+
+/* Optional fade-in animation */
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Text below the logo */
+.landing-text {
+	max-width: 800px; /* Limit text to 800px max width */
+	margin-top: -100px; /* Add spacing from the logo */
+	margin-bottom: 60px; /* Add spacing from the logo */
+	padding: 0 20px; /* Add padding to prevent touching edges */
+	text-align: center; /* Center the text */
+	line-height: 1.8; /* Spread out text for readability */
+	color: white
+}
+
+
+.navbar-nav .nav-link {
+  font-size: 1.3rem; /* Increase the font size */
+}
+
+
+/* Styling for the bitmoji image */
+.bitmoji {
+    max-width: 100%; /* Responsive */
+    height: auto;
+}
+
+/* Title styling */
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+	margin-left: 30px;
+    font-family: Amsterdam-four; /* Apply custom font */
+    color: black; /* Change text color to black */
+}
+
+/* Paragraph styling */
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #000;
+}
+
+/* Styling for the footer */
+.footer-container {
+    width: 100%; /* Full width */
+    background-color: black; /* Black background */
+    padding: 40px 0; /* Padding for vertical spacing */
+    text-align: center; /* Center-align the text */
+    margin-top: -60px; /* Push the footer to the bottom */
+}
+
+.footer-text {
+    color: white; /* White text */
+    font-size: 1rem; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Optional font choice */
+}
+
+/* Center align the title */
+.gallery-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Image styling */
+.gallery-image {
+    width: 400px;
+    height: 200px;
+    background-color: #d3d3d3; /* Placeholder gray color */
+    border-radius: 8px;
+    margin: 0 auto; /* Center-align the image */
+}
+
+
+/* Reduce row spacing */
+.gallery-row {
+    margin-bottom: 10px; /* Reduced space between rows */
+}
+
+
+td {
+	padding: 10px;
+}
+
+.thumbnail {
+	max-width: 100%;
+}
+
+.title {
+	font-family: Amsterdam-four;
+	color: black;
+	padding: 50px;
+	text-align: center;
+}
+
+iframe {
+	width: 100%;
+	height: 80vh; /* 100% of the viewport height */
+}
+
+.navbar {
+	width: 100%; /* Full width */
+	height: 20vh; /* 20% of the viewport height */
+	background-color: black !important; /* Background color for the navbar */
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Center the image */
+	justify-content: center; /* Center the content vertically */
+}
+
+/* Styling for the logo */
+.logo {
+	width: 15%; /* Adjust this as needed for logo size */
+    height: auto; /* Maintain the aspect ratio */
+    margin-top: 90px;
+}
+
+/* Styling for the nav links container */
+.nav-links {
+	list-style-type: none; /* Remove default list bullets */
+	display: flex; /* Align links in a row */
+	justify-content: center; /* Center the links horizontally */
+	width: 100%; /* Take up full width */
+	padding: 0;
+    margin-top: 75px;
+}
+
+.navbar-nav {
+	display: flex; /* Align links in a row */
+	justify-content: center; /* Center the links horizontally */
+	width: 100%; /* Take up full width */
+	gap: 40px; /* Increase spacing between links */
+}
+
+.nav-links li {
+	margin: 60px; /* Space out the links horizontally */
+}
+
+.nav-links a {
+    text-decoration: none;
+    transition: color 0.3s ease-in;
+    color: white;
+}
+
+.nav-links:hover {
+    color: white;
+}
+
+#navbarNav {
+	margin-top: 140px; /* Increase spacing between logo and links */
+}
+
+.photography-img {
+	width: 100%;
+}
+
+.about {
+	color: black
+}
+
+/* Background Wrapper */
+.background-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black; /* Black background */
+  }
+
+/* Form Container */
+.form-container {
+  text-align: left; /* Aligns content to the left */
+  width: 50%; /* Adjust width as needed */
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for the form */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset by 50% of its width and height */
+}
+
+@font-face {
+	font-family: Amsterdam-four;
+	src: url('amsterdam-four.ttf');
+}
+
+/* Get in Touch Heading */
+.get-in-touch {
+  font-size: 3rem;
+  font-family: 'Amsterdam-xfour'
+
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Style */
+.form-container p {
+  font-size: 1.2rem;
+  color: #333; /* Paragraph text color */
+  margin-bottom: 30px;
+}
+
+/* Form Layout */
+.form-container form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Input and Textarea */
+.form-container input, 
+.form-container textarea, 
+.form-container button {
+  font-size: 1rem;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Placeholder Styles */
+.form-container input::placeholder, 
+.form-container textarea::placeholder {
+  color: #aaa;
+}
+
+/* Textarea */
+.form-container textarea {
+  grid-column: span 2;
+  resize: none;
+  height: 100px;
+}
+
+/* Button */
+.form-container button {
+  grid-column: span 2;
+  background-color: #000000;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #4c4c4c;
+}
+
+@font-face {
+  font-family: Amsterdam-four;
+	src: url('amsterdam-four.ttf');
+}
+
+.get-in-touch-title {
+  font-family: Amsterdam-four; /* Apply custom font */
+  color: black; /* Change text color to black */
+  font-size: 3rem; /* Adjust as needed */
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #333; /* Adjust color as needed */
+}
+
+.form-container {
+  margin-top: 50px; /* Adjust the value as needed */
+}
+
+.row:last-of-type {
+  margin-bottom: 80px; /* Adjust value as needed */
+}
